@@ -24,14 +24,7 @@ socket.on('userjoin', function(from, user_name){
   $('#messages').append('<li><b>' + from + '</b>: ' + msg + ' </li>');
 });
 socket.on('chatMessage', function(from, msg, to){
-  /*var me = $('#user').val();
-  var color = (from == me) ? 'green' : '#009afd';
-  var from = (from == me) ? 'Me' : from;*/
   $('#messages').append('<li><b style="color:#009afd">' + from + '</b>: ' + msg + '</li>');
 });
- 
-
-
- 
 
 
